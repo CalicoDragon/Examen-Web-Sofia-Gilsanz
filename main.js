@@ -20,6 +20,10 @@ const replaceCocktails = (cocktailArray) => {
   cocktailsContainer.innerHTML = "";
 
   cocktailArray.forEach((element) => {
+    //let imgpath = element.strImageSource;
+    //imgpath = imgpath.substring(imgpath.IndexOf(":"), imgpath.length);
+    //console.log(imgpath);
+
     cocktailsContainer.innerHTML += `<div class="card">
           <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/Klassiche_Margarita.jpg" alt="" />
           <div class="container">
@@ -27,5 +31,13 @@ const replaceCocktails = (cocktailArray) => {
             <p>muy rica</p>
           </div>
         </div>`;
+
+    //cocktailsContainer.innerHTML += `<div class="card">
+    //  <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/${imgpath}" alt="" />
+    // <div class="container">
+    // <h2>${element.strDrink}</h2>
+    // <p>muy rica</p>
+    // </div>
+    //</div>`;
   });
 };
