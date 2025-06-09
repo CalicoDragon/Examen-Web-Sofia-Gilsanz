@@ -52,9 +52,39 @@ body {
 }
 
 .main {
-  margin-top: 4rem;
+  margin: 4rem 6rem;
+
+  h1 {
+    margin: 0px 20px;
+  }
 }
 
 .foodlist {
   display: flex;
+  flex-flow: row wrap;
+  margin: 10px;
+  justify-content: center;
+}
+
+.card {
+  max-width: 20%;
+  margin: 10px 10px;
+
+  img {
+    width: 100%;
+  }
+
+  .container {
+    padding: 2px 14px;
+  }
+
+  background-color: var(--box-clr);
+}
+
+.searchBar {
+  font-size: 16px;
+  padding: 1em;
+  border-radius: 10px;
+  border: 0px;
+  width: 100%;
 }
