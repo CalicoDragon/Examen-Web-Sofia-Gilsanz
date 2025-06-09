@@ -1,0 +1,60 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg-clr: #f0e3e4;
+  --box-clr: white;
+  --accent-clr: #dcbdc3;
+  --strongAccent-clr: #f4acb7;
+  --text: black;
+}
+
+html {
+  font-family: Roboto, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5rem;
+  font-size: medium;
+}
+
+body {
+  background-color: var(--bg-clr);
+}
+
+.navigation {
+  ul {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: var(--accent-clr);
+  }
+
+  li {
+    float: left;
+  }
+
+  a {
+    display: block;
+    text-align: center;
+    padding: 14px 14px;
+    color: var(--text);
+    text-decoration: none;
+  }
+
+  .active {
+    background-color: var(--strongAccent-clr);
+  }
+}
+
+.main {
+  margin-top: 4rem;
+}
+
+.foodlist {
+  display: flex;
+}
